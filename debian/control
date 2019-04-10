@@ -8,6 +8,7 @@ Homepage: http://lliurex.net
 Vcs-Git: https://github.com/lliurex/netinstall-kernel.git
 
 Package: netinstall-kernel
+Multi-Arch: same
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Kernel with ramdisk needed to allow netboot

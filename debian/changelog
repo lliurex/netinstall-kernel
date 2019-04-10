@@ -1,3 +1,9 @@
+netinstall-kernel (0.2.1) bionic; urgency=medium
+
+  * Dummy update
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Wed, 10 Apr 2019 22:41:55 +0200
+
 netinstall-kernel (0.2) bionic; urgency=medium
 
   * Allow two architectures installed at same time

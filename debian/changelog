@@ -1,0 +1,5 @@
+netinstall-kernel (0.1) bionic; urgency=medium
+
+  * Initial Release with kernel 4.15.0-46
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Wed, 10 Apr 2019 10:09:49 +0200

@@ -1,0 +1,14 @@
+Source: netinstall-kernel
+Section: admin
+Priority: optional
+Maintainer: M.Angel Juan <m.angel.juan@gmail.com>
+Build-Depends: debhelper (>= 10)
+Standards-Version: 4.1.2
+Homepage: http://lliurex.net
+Vcs-Git: https://github.com/lliurex/netinstall-kernel.git
+
+Package: netinstall-kernel
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Kernel with ramdisk needed to allow netboot
+ Netinstall kernel provides initial ramdisk with kernel allowing network boot computers.

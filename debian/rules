@@ -1,0 +1,40 @@
+#!/usr/bin/make -f
+# See debhelper(7) (uncomment to enable)
+# output every command that modifies files on the build system.
+#export DH_VERBOSE = 1
+
+
+# see FEATURE AREAS in dpkg-buildflags(1)
+#export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+# see ENVIRONMENT in dpkg-buildflags(1)
+# package maintainers to append CFLAGS
+#export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
+# package maintainers to append LDFLAGS
+#export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+
+SHELL := bash
+
+DEB_ARCH ?= $(shell dpkg --print-architecture 2>/dev/null)
+
+DESTINATION_DIR := var/lib/tftpboot/ltsp/netinstall/ubuntu-installer
+
+ifeq (amd64,$(DEB_ARCH))
+	INSTALL_DIR := amd64
+else
+	INSTALL_DIR := i386
+endif
+
+override_dh_auto_install:
+	dh_auto_install
+	mkdir -p debian/netinstall-kernel/$(DESTINATION_DIR)/
+	cp -R $(INSTALL_DIR) debian/netinstall-kernel/$(DESTINATION_DIR)/
+%:
+	dh $@
+
+
+# dh_make generated override targets
+# This is example for Cmake (See https://bugs.debian.org/641051 )
+#override_dh_auto_configure:
+#	dh_auto_configure -- #	-DCMAKE_LIBRARY_PATH=$(DEB_HOST_MULTIARCH)
+

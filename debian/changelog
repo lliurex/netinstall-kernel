@@ -1,3 +1,9 @@
+netinstall-kernel (0.2.1) focal; urgency=medium
+
+  * Focal build
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Mon, 28 Sep 2020 11:25:57 +0200
+
 netinstall-kernel (0.2.1) bionic; urgency=medium
 
   * Dummy update

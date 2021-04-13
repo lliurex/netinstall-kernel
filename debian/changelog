@@ -1,3 +1,9 @@
+netinstall-kernel (0.2.2) focal; urgency=medium
+
+  * Release for focal with 5.4.0-26 amd64
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Tue, 13 Apr 2021 13:28:55 +0200
+
 netinstall-kernel (0.2.1) focal; urgency=medium
 
   * Focal build

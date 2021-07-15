@@ -1,3 +1,9 @@
+netinstall-kernel (0.2.3) focal; urgency=medium
+
+  * New lliurex21 logo
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Thu, 15 Jul 2021 13:23:54 +0200
+
 netinstall-kernel (0.2.2) focal; urgency=medium
 
   * Release for focal with 5.4.0-26 amd64

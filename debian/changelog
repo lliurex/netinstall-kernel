@@ -1,3 +1,9 @@
+netinstall-kernel (0.2.4) focal-updates; urgency=medium
+
+  * Change installation path
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Tue, 09 Nov 2021 16:54:24 +0100
+
 netinstall-kernel (0.2.3) focal; urgency=medium
 
   * New lliurex21 logo

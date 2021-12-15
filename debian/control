@@ -10,6 +10,6 @@ Vcs-Git: https://github.com/lliurex/netinstall-kernel.git
 Package: netinstall-kernel
 Multi-Arch: same
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, llx-bootmanager
 Description: Kernel with ramdisk needed to allow netboot
  Netinstall kernel provides initial ramdisk with kernel allowing network boot computers.

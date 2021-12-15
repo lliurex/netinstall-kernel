@@ -17,7 +17,7 @@ SHELL := bash
 
 DEB_ARCH ?= $(shell dpkg --print-architecture 2>/dev/null)
 
-DESTINATION_DIR := var/lib/tftpboot/ltsp/netinstall/ubuntu-installer
+DESTINATION_DIR := var/lib/tftpboot/netinstall
 
 ifeq (amd64,$(DEB_ARCH))
 	INSTALL_DIR := amd64
